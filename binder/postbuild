@@ -1,5 +1,5 @@
 pip install --user --index-url https://test.pypi.org/simple/ k_jupyter_poc
-python -m k_jupyter_poc.install
+python -m k_jupyter_poc.install --user
 
 git clone 'https://github.com/z3prover/z3' --branch=z3-4.8.15 \
     && cd z3                                                         \
