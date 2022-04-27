@@ -1,2 +1,14 @@
 pip install --user --index-url https://test.pypi.org/simple/ k_jupyter_poc
 python -m k_jupyter_poc.install
+
+git clone 'https://github.com/z3prover/z3' --branch=z3-4.8.15 \
+    && cd z3                                                         \
+    && python scripts/mk_make.py                                     \
+    && cd build                                                      \
+    && make -j8                                                      \
+    && make install                                                  \
+    && cd ../..                                                      \
+    && rm -rf z3
+    
+wget https://github.com/runtimeverification/k/releases/download/v5.3.26/kframework_5.3.26_amd64_focal.deb
+apt-get install --yes ./kframework_5.3.26_amd64_focal.deb
