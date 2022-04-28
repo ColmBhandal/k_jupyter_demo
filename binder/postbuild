@@ -1,2 +1,2 @@
 pip install --user --index-url https://test.pypi.org/simple/ k_jupyter_poc==0.0.0
-python -m k_jupyter_poc.install
+python -m k_jupyter_poc.install --user
