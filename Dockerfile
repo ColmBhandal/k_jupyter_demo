@@ -2,9 +2,9 @@ FROM runtimeverificationinc/kframework-k:ubuntu-focal-release
 
 RUN python3 -m pip install --no-cache-dir notebook jupyterlab
 
-RUN pip install --no-cache-dir jupyterhub
+RUN pip3 install --no-cache-dir jupyterhub
 
-RUN pip install --index-url https://test.pypi.org/simple/ k_jupyter_poc==0.0.0
+RUN pip3 install --index-url https://test.pypi.org/simple/ k_jupyter_poc==0.0.0
 RUN python3 -m k_jupyter_poc.install
 
 ARG NB_USER=kdoc
