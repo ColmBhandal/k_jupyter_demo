@@ -1,6 +1,6 @@
 FROM runtimeverificationinc/kframework-k:ubuntu-focal-release
 
-RUN python3 -m pip install --no-cache-dir notebook jupyterlab
+RUN python3 -m pip3 install --no-cache-dir notebook jupyterlab
 
 RUN pip3 install --no-cache-dir jupyterhub
 
